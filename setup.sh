@@ -67,4 +67,18 @@ git config --global user.email "mail@me.com"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 
+# clean up
+sudo apt autoremove -y
 
+# reboot system in 5 seconds - countdown
+echo "Rebooting in 5 seconds..."
+sleep 1
+echo "Rebooting in 4 seconds..."
+sleep 1
+echo "Rebooting in 3 seconds..."
+sleep 1
+echo "Rebooting in 2 seconds..."
+sleep 1
+echo "Rebooting in 1 seconds..."
+sleep 1
+sudo reboot
