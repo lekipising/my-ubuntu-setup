@@ -60,8 +60,8 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 # create git config
-git config --global user.name "Liplan Lekipising"
-git config --global user.email "mail@me.com"
+git config --global user.name $1
+git config --global user.email $2
 
 # install google chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
