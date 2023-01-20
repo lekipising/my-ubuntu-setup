@@ -1,6 +1,8 @@
 # my-ubuntu-setup
 
-Contains ```setup.sh``` script to install all the packages I use on my Ubuntu machine.
+Setup ubuntu system for dev work and daily use quickly using ```setup.sh```.
+
+![Ubuntu Desktop](img.png)
 
 
 ## How to use
@@ -12,7 +14,7 @@ Contains ```setup.sh``` script to install all the packages I use on my Ubuntu ma
     chmod +x setup.sh
     ```
     This commands will make the file executable
-    
+
 
     ```bash
     ./setup.sh USERNAME EMAIL
