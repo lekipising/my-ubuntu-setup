@@ -51,6 +51,7 @@ sudo snap install spotify
 sudo snap install postman
 sudo snap install slack --classic
 sudo snap install mysql-workbench-community
+sudo snap install heroku --classic
 
 # allow workbench to access password service
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
