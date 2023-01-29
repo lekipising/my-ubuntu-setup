@@ -5,6 +5,34 @@ Setup ubuntu system for dev work and daily use quickly using ```setup.sh```.
 ![Ubuntu Desktop](img.png)
 
 
+## Installed packages
+
+- git
+- curl
+- wget
+- vlc
+- gimp
+- gparted
+- gnome-tweaks
+- gnome-shell-extensions
+- neofetch
+- nettools
+- default-jre
+- maven
+- docker
+- apache2
+- mysql-server
+- php
+- VS Code
+- Postman
+- Spotify
+- Slack
+- Mysql Workbench
+- heroku
+- nodejs
+- google-chrome
+
+
 ## How to use
 
 1. Download the [setup.sh](setup.sh) file.
