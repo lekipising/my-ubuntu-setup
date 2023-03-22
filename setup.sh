@@ -9,14 +9,14 @@ sudo apt update
 sudo apt upgrade -y && sudo apt dist-upgrade -y
 
 # install programs/tools - common
-sudo apt install -y git curl wget vlc gimp gparted gnome-tweaks gnome-shell-extensions neofetch nettools default-jre maven
+sudo apt install git curl wget vlc gimp gparted gnome-tweaks gnome-shell-extensions neofetch nettools default-jre maven -y
 
 # install docker - steps
 sudo apt-get install \
     ca-certificates \
     curl \
     gnupg \
-    lsb-release
+    lsb-release -y
 
 sudo mkdir -p /etc/apt/keyrings
 
@@ -28,7 +28,7 @@ echo \
 
 sudo apt-get update
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 
 sudo groupadd docker
 
@@ -36,19 +36,14 @@ sudo usermod -aG docker $USER
 
 
 # LAMP stack steps
-sudo apt install apache2
+sudo apt install apache2 -y
 sudo ufw allow in "Apache"
 
 sudo apt install mysql-server
 
-sudo mysql_secure_installation
-
-sudo apt install php libapache2-mod-php php-mysql
+sudo apt install php libapache2-mod-php php-mysql -y
 
 # install snaps
-sudo snap install code --classic
-sudo snap install spotify
-sudo snap install postman
 sudo snap install slack --classic
 sudo snap install mysql-workbench-community
 sudo snap install heroku --classic
