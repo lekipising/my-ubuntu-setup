@@ -9,7 +9,7 @@ sudo apt update
 sudo apt upgrade -y && sudo apt dist-upgrade -y
 
 # install programs/tools - common
-sudo apt install git curl wget vlc gimp gparted gnome-tweaks gnome-shell-extensions neofetch nettools default-jre maven -y
+sudo apt install git wget gimp gparted gnome-tweaks gnome-shell-extensions neofetch nettools default-jre -y
 
 # install docker - steps
 sudo apt-get install \
@@ -34,19 +34,18 @@ sudo groupadd docker
 
 sudo usermod -aG docker $USER
 
-
-# LAMP stack steps
-sudo apt install apache2 -y
-sudo ufw allow in "Apache"
-
-sudo apt install mysql-server
-
-sudo apt install php libapache2-mod-php php-mysql -y
-
 # install snaps
 sudo snap install slack --classic
 sudo snap install mysql-workbench-community
 sudo snap install heroku --classic
+
+# install vscode
+wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+sudo apt install ./vscode
+
+# install google chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
 
 # allow workbench to access password service
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
@@ -58,10 +57,6 @@ sudo apt-get install -y nodejs
 # create git config
 git config --global user.name $1
 git config --global user.email $2
-
-# install google chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb
 
 # clean up
 sudo apt autoremove -y
