@@ -34,6 +34,14 @@ sudo groupadd docker
 
 sudo usermod -aG docker $USER
 
+# LAMP stack steps
+sudo apt install apache2 -y
+sudo ufw allow in "Apache"
+
+sudo apt install mysql-server -y
+
+sudo apt install php libapache2-mod-php php-mysql -y
+
 # install snaps
 sudo snap install slack --classic
 sudo snap install mysql-workbench-community
@@ -57,6 +65,18 @@ sudo apt-get install -y nodejs
 # create git config
 git config --global user.name $1
 git config --global user.email $2
+
+# install google chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+
+# install vscode
+wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+sudo apt install ./vscode.deb
+
+# node packages - global
+sudo npm i -g npm-check-updates
+sudo npm install -g pnpm
 
 # clean up
 sudo apt autoremove -y
