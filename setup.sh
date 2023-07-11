@@ -9,7 +9,7 @@ sudo apt update
 sudo apt upgrade -y && sudo apt dist-upgrade -y
 
 # install programs/tools - common
-sudo apt install git wget gimp gparted gnome-tweaks gnome-shell-extensions neofetch nettools default-jre -y
+sudo apt install git wget gimp gparted gnome-tweaks gnome-shell-extensions neofetch nettools default-jre maven -y
 
 # install docker - steps
 sudo apt-get install \
