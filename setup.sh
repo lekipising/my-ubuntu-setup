@@ -9,7 +9,7 @@ sudo apt update
 sudo apt upgrade -y && sudo apt dist-upgrade -y
 
 # install programs/tools - common
-sudo apt install git wget gimp gparted gnome-tweaks gnome-shell-extensions neofetch nettools default-jre maven -y
+sudo apt install git wget gimp gparted maven gnome-tweaks gnome-shell-extensions neofetch nettools default-jre vlc -y
 
 # install docker - steps
 sudo apt-get install \
@@ -46,10 +46,6 @@ sudo apt install php libapache2-mod-php php-mysql -y
 sudo snap install slack --classic
 sudo snap install mysql-workbench-community
 sudo snap install heroku --classic
-
-# install vscode
-wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
-sudo apt install ./vscode
 
 # install google chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
