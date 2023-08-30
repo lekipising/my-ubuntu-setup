@@ -48,10 +48,6 @@ sudo snap install slack --classic
 sudo snap install mysql-workbench-community
 sudo snap install heroku --classic
 
-# install google chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb
-
 # allow workbench to access password service
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
 
@@ -65,11 +61,11 @@ git config --global user.email $2
 
 # install google chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb -y
 
 # install vscode
 wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
-sudo apt install ./vscode.deb
+sudo apt install ./vscode.deb -y
 
 # node packages - global
 sudo npm i -g npm-check-updates
