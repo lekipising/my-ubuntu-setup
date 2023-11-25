@@ -2,7 +2,7 @@
 
 Setup ubuntu system for dev work and daily use quickly using ```setup.sh```.
 
-![Ubuntu Desktop](img.png)
+![Ubuntu Desktop](https://res.cloudinary.com/dpnbddror/image/upload/v1700929037/liplan/Screenshot_from_2023-11-25_19-16-01_lgkngp.png)
 
 
 ## Installed packages
