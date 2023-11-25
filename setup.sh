@@ -51,8 +51,8 @@ sudo snap install heroku --classic
 # allow workbench to access password service
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
 
-# install nodejs - 18 LTS
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+# install nodejs - 20 LTS
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 # create git config
