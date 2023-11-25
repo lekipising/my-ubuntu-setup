@@ -10,7 +10,7 @@ sudo apt install -y software-properties-common
 sudo apt upgrade -y && sudo apt dist-upgrade -y
 
 # install programs/tools - common
-sudo apt install git wget gimp gparted maven gnome-tweaks gnome-shell-extensions neofetch nettools default-jre vlc -y
+sudo apt install git wget gimp gparted maven gnome-tweaks gnome-shell-extensions neofetch nettools default-jre vlc pgadmin4 stripe -y
 
 # install docker - steps
 sudo apt-get install \
@@ -76,13 +76,5 @@ sudo apt autoremove -y
 
 # reboot system in 5 seconds - countdown
 echo "Rebooting in 5 seconds..."
-sleep 1
-echo "Rebooting in 4 seconds..."
-sleep 1
-echo "Rebooting in 3 seconds..."
-sleep 1
-echo "Rebooting in 2 seconds..."
-sleep 1
-echo "Rebooting in 1 seconds..."
-sleep 1
+sleep 5
 sudo reboot
